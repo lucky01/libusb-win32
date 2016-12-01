@@ -1,53 +1,35 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install-filter", "install-filter.vcproj", "{ED3B338F-9A7E-4136-A98D-E00771622E7B}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libusb0", "libusb-dll.vcproj", "{C52E6FA6-AFF5-468D-A82F-E9932E8203D4}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inf-wizard", "inf-wizard.vcproj", "{040945A3-5236-4F2E-A726-58FB98576E7B}"
-	ProjectSection(ProjectDependencies) = postProject
-		{9AA0E745-1A0A-4700-8ECB-6A6DE9DBF8B9} = {9AA0E745-1A0A-4700-8ECB-6A6DE9DBF8B9}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testlibusb-win", "testlibusb-win.vcproj", "{A1CCD5D1-6FB5-424E-B987-8DA81F16D14E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C52E6FA6-AFF5-468D-A82F-E9932E8203D4} = {C52E6FA6-AFF5-468D-A82F-E9932E8203D4}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testlibusb", "testlibusb.vcproj", "{64992906-17FE-4EC7-BF72-AF41B0E826D0}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C52E6FA6-AFF5-468D-A82F-E9932E8203D4} = {C52E6FA6-AFF5-468D-A82F-E9932E8203D4}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libusb-sys", "libusb-sys.vcproj", "{AD3F6DB8-DA1A-4C27-8CBB-FC7F4B836547}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testbulk", "testbulk.vcproj", "{F1A067D0-AE24-43F2-ACD6-6545F41CEA2E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C52E6FA6-AFF5-468D-A82F-E9932E8203D4} = {C52E6FA6-AFF5-468D-A82F-E9932E8203D4}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Benchmark", "Benchmark.vcproj", "{930C04F7-EA05-49D4-8741-5C6AC3B9D72A}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C52E6FA6-AFF5-468D-A82F-E9932E8203D4} = {C52E6FA6-AFF5-468D-A82F-E9932E8203D4}
-	EndProjectSection
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libwdi", "libwdi", "{7D8B217B-7329-489D-A956-2EC3C39EE5B8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "embedder", "additional\libwdi\libwdi\embedder_2008.vcproj", "{792D44D5-28A7-4EB3-B84B-8021FE3189F9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install-filter", "install-filter.vcxproj", "{ED3B338F-9A7E-4136-A98D-E00771622E7B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "installer_x64", "additional\libwdi\libwdi\installer_x64_2008.vcproj", "{E5A56EE0-182F-470F-8CDC-8C1B7B86EE26}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libusb0", "libusb-dll.vcxproj", "{C52E6FA6-AFF5-468D-A82F-E9932E8203D4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "installer_x86", "additional\libwdi\libwdi\installer_x86_2008.vcproj", "{9B1C561E-F95B-4849-A7AA-A4350E227C20}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inf-wizard", "inf-wizard.vcxproj", "{040945A3-5236-4F2E-A726-58FB98576E7B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libwdi (static)", "additional\libwdi\libwdi\libwdi_static_2008.vcproj", "{9AA0E745-1A0A-4700-8ECB-6A6DE9DBF8B9}"
-	ProjectSection(ProjectDependencies) = postProject
-		{9B1C561E-F95B-4849-A7AA-A4350E227C20} = {9B1C561E-F95B-4849-A7AA-A4350E227C20}
-		{792D44D5-28A7-4EB3-B84B-8021FE3189F9} = {792D44D5-28A7-4EB3-B84B-8021FE3189F9}
-		{E5A56EE0-182F-470F-8CDC-8C1B7B86EE26} = {E5A56EE0-182F-470F-8CDC-8C1B7B86EE26}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testlibusb-win", "testlibusb-win.vcxproj", "{A1CCD5D1-6FB5-424E-B987-8DA81F16D14E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install-filter-win", "install-filter-win.vcproj", "{0EABF109-6EC7-4478-9985-8357D3237873}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testlibusb", "testlibusb.vcxproj", "{64992906-17FE-4EC7-BF72-AF41B0E826D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libusb-sys", "libusb-sys.vcxproj", "{AD3F6DB8-DA1A-4C27-8CBB-FC7F4B836547}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testbulk", "testbulk.vcxproj", "{F1A067D0-AE24-43F2-ACD6-6545F41CEA2E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Benchmark", "Benchmark.vcxproj", "{930C04F7-EA05-49D4-8741-5C6AC3B9D72A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "embedder", "additional\libwdi\libwdi\embedder_2008.vcxproj", "{792D44D5-28A7-4EB3-B84B-8021FE3189F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "installer_x64", "additional\libwdi\libwdi\installer_x64_2008.vcxproj", "{E5A56EE0-182F-470F-8CDC-8C1B7B86EE26}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "installer_x86", "additional\libwdi\libwdi\installer_x86_2008.vcxproj", "{9B1C561E-F95B-4849-A7AA-A4350E227C20}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libwdi (static)", "additional\libwdi\libwdi\libwdi_static_2008.vcxproj", "{9AA0E745-1A0A-4700-8ECB-6A6DE9DBF8B9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install-filter-win", "install-filter-win.vcxproj", "{0EABF109-6EC7-4478-9985-8357D3237873}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
